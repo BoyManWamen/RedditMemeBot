@@ -44,6 +44,16 @@ Version: 0.6.7
 
 ### Installing
 
+First, navigate to the directory you want to have your project.
+```sh
+cd path/to/your/directory
+```
+
+Next, clone the repository.
+```sh
+git clone https://github.com/BoyManWamen/RedditMemeBot.git
+```
+
 Move into the project directory.
 
 ```sh
