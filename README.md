@@ -8,6 +8,10 @@
 <a href="https://github-com.translate.goog/BoyManWamen/RedditMemeBot/blob/main/README.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp">![Translate](https://img.shields.io/badge/Translate-blue)</a>
 </div>
 
+<div align="center">
+<img src="https://media.giphy.com/media/xT8qB4foF1nxHZwpLa/giphy.gif"/>
+</div>
+
 ## Table of Contents
 
 * [Description](#description)
