@@ -40,10 +40,38 @@ Version: 0.6.7
 
 ### Installing
 
-Once you have cloned the repository, make sure to download all of the dependencies with the following commands.
+Move into the project directory.
 
 ```sh
 cd RedditMemeBot
+```
+
+Make sure you have installed all of the dependencies such as GoogleImageCrawler and praw.
+
+```sh
+pip install icrawler praw
+```
+
+Next, make sure that you change ```"CLIENT_ID"```, ```SECRET```, ```PASSWORD```, and ```USERNAME``` in the following lines of code:
+
+```py
+reddit = praw.Reddit(
+    client_id=os.getenv("CLIENT_ID"),
+    client_secret=os.getenv("SECRET"),
+    password=os.getenv("PASSWORD"),
+    user_agent="Reddit Image Poster by u/",
+    username=os.getenv("USERNAME"),
+)
+```
+
+In order to get your client id and client secret, you must work with Reddit OAuth. The documentation for how is linked below.
+
+[Praw Documentation](https://praw.readthedocs.io/en/stable/)
+
+Make sure to change ```"me_irl``` in the following lines of code to choose which subreddit you want to upload your memes to.
+
+```py
+reddit.subreddit("me_irl").submit_image("me_irl", f"./dataset/{randomword} meme/{file}")
 ```
 
 ### Executing Program
