@@ -56,7 +56,7 @@ Make sure you have installed all of the dependencies such as GoogleImageCrawler 
 pip install icrawler praw
 ```
 
-Next, make sure that you change ```"CLIENT_ID"```, ```SECRET```, ```PASSWORD```, and ```USERNAME``` in the following lines of code:
+Next, make sure that you change ```CLIENT_ID```, ```SECRET```, ```PASSWORD```, and ```USERNAME``` in the following lines of code:
 
 ```py
 reddit = praw.Reddit(
@@ -72,7 +72,7 @@ In order to get your client id and client secret, you must work with Reddit OAut
 
 [Praw Documentation](https://praw.readthedocs.io/en/stable/)
 
-Make sure to change ```"me_irl``` in the following lines of code to choose which subreddit you want to upload your memes to.
+Make sure to change ```me_irl``` in the following lines of code to choose which subreddit you want to upload your memes to.
 
 ```py
 reddit.subreddit("me_irl").submit_image("me_irl", f"./dataset/{randomword} meme/{file}")
