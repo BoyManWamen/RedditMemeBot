@@ -17,7 +17,7 @@ reddit = praw.Reddit(
     client_id=os.getenv("CLIENT_ID"),
     client_secret=os.getenv("SECRET"),
     password=os.getenv("PASSWORD"),
-    user_agent="Reddit Image Poster by u/BoyManWamen",
+    user_agent="Reddit Image Poster by u/",
     username=os.getenv("USERNAME"),
 )
 
@@ -44,11 +44,11 @@ reddit = praw.Reddit(
     client_id=os.getenv("CLIENT_ID"),
     client_secret=os.getenv("SECRET"),
     password=os.getenv("PASSWORD"),
-    user_agent="Reddit Image Poster by u/BoyManWamen",
+    user_agent="Reddit Image Poster",
     username=os.getenv("USERNAME"),
 )
 
-redditor = reddit.redditor("BoyManWamen")
+redditor = reddit.redditor("")
 
 i = 0
 for post in redditor.controversial("all"):
